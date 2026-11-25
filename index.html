@@ -1,168 +1,222 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>김민준 ♥ 이서연 결혼합니다</title>
-  <meta name="description" content="2027년 5월 15일 토요일 오후 1시, 저희 두 사람의 결혼식에 초대합니다." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBF9F4">
+  <title>MELLOW BEAN | 멜로우빈</title>
+  <meta name="description" content="천천히, 부드럽게 내린 한 잔. 식물과 햇살이 있는 카페 멜로우빈.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Gaegu:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="invitation">
 
-    <!-- 메인 커버 -->
-    <section class="cover">
-      <div class="cover__photo" aria-hidden="true"></div>
-      <div class="cover__text">
-        <p class="cover__en">We're getting married</p>
-        <h1 class="cover__names">김민준 <span>&amp;</span> 이서연</h1>
-        <p class="cover__date">2027. 05. 15. SAT PM 1:00</p>
-        <p class="cover__place">더채플 웨딩홀 3층 그랜드홀</p>
+  <!-- 1. Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#home" class="header__logo">Mellow Bean</a>
+
+      <button class="header__toggle" id="menuToggle" type="button"
+              aria-label="메뉴 열기" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="header__nav" id="siteNav" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#space">Space</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 2. Hero -->
+    <section class="hero" id="home">
+      <img class="hero__image" src="images/latte-with-cookie.jpg"
+           srcset="images/latte-with-cookie-600.jpg 600w, images/latte-with-cookie.jpg 1200w"
+           sizes="100vw" fetchpriority="high"
+           alt="창가 나무 테이블 위에 놓인 라떼와 쿠키, 그리고 꽃병">
+      <div class="hero__overlay"></div>
+      <div class="hero__sparkles" id="heroSparkles" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 class="hero__logo">Mellow Bean</h1>
+        <p class="hero__tagline">천천히, 부드럽게 내린 한 잔</p>
+        <a href="#menu" class="btn">메뉴 보기</a>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="아래로 스크롤">↓</a>
+    </section>
+
+    <!-- 3. About -->
+    <section class="section section--bg" id="about">
+      <div class="container about">
+        <div class="about__image reveal">
+          <img src="images/pour-over-brewing.jpg"
+               srcset="images/pour-over-brewing-600.jpg 600w, images/pour-over-brewing.jpg 1200w"
+               sizes="(max-width: 768px) 100vw, 50vw"
+               alt="구리 주전자로 핸드드립 커피를 내리는 모습" loading="lazy">
+        </div>
+        <div class="about__text reveal">
+          <div class="section-title section-title--left">
+            <h2 class="section-title__en">About</h2>
+            <p class="section-title__ko">멜로우빈 이야기</p>
+          </div>
+          <p>
+            멜로우빈은 '부드러운 한 잔'이라는 단순한 바람에서 시작했습니다.
+            계절마다 산지를 직접 고른 원두를 소량씩 볶아, 가장 맛있는 때에 내립니다.
+          </p>
+          <p>
+            에스프레소 한 잔도, 핸드드립 한 잔도 서두르지 않습니다.
+            물줄기를 천천히 따라가며 원두가 가진 단맛과 향을 끝까지 끌어냅니다.
+          </p>
+          <p>
+            초록 식물과 햇살이 머무는 자리에서, 잠시 쉬어 가세요.
+            멜로우빈의 커피는 그 여유와 함께일 때 가장 맛있습니다.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- 인사말 -->
-    <section class="section greeting fade-in">
-      <p class="section__en">Invitation</p>
-      <h2 class="section__title">소중한 분들을 초대합니다</h2>
-      <p class="greeting__poem">
-        서로 다른 길을 걸어온 두 사람이<br />
-        이제 같은 곳을 바라보며<br />
-        한 길을 함께 걸어가려 합니다.<br /><br />
-        저희의 새로운 시작을<br />
-        따뜻한 마음으로 축복해 주시면<br />
-        더없는 기쁨으로 간직하겠습니다.
-      </p>
-      <div class="parents">
-        <p><span class="parents__name">김정호 · 박미경</span>의 아들 <strong>민준</strong></p>
-        <p><span class="parents__name">이상훈 · 최윤희</span>의 딸 <strong>서연</strong></p>
-      </div>
-      <button class="btn" type="button" data-open="contact-modal">연락하기</button>
-    </section>
+    <!-- 4. Menu -->
+    <section class="section section--alt" id="menu">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2 class="section-title__en">Menu</h2>
+          <p class="section-title__ko">멜로우빈의 대표 메뉴</p>
+        </div>
 
-    <!-- 갤러리 -->
-    <section class="section gallery fade-in">
-      <p class="section__en">Gallery</p>
-      <h2 class="section__title">우리의 순간들</h2>
-      <div class="gallery__grid" id="gallery"></div>
-    </section>
-
-    <!-- 날짜 / 캘린더 -->
-    <section class="section calendar fade-in">
-      <p class="section__en">Wedding Day</p>
-      <h2 class="section__title">2027년 5월 15일 토요일<br /><small>오후 1시</small></h2>
-      <div class="calendar__box" id="calendar"></div>
-      <div class="countdown" id="countdown">
-        <div><span data-unit="days">0</span><small>DAYS</small></div>
-        <div><span data-unit="hours">0</span><small>HOUR</small></div>
-        <div><span data-unit="minutes">0</span><small>MIN</small></div>
-        <div><span data-unit="seconds">0</span><small>SEC</small></div>
-      </div>
-      <p class="countdown__msg" id="dday-msg"></p>
-    </section>
-
-    <!-- 오시는 길 -->
-    <section class="section location fade-in">
-      <p class="section__en">Location</p>
-      <h2 class="section__title">오시는 길</h2>
-      <p class="location__name">더채플 웨딩홀 3층 그랜드홀</p>
-      <p class="location__addr">
-        서울특별시 강남구 테헤란로 123
-        <button class="link-btn" type="button" data-copy="서울특별시 강남구 테헤란로 123">주소 복사</button>
-      </p>
-      <div class="map-buttons">
-        <a class="map-btn" target="_blank" rel="noopener"
-           href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%85%8C%ED%97%A4%EB%9E%80%EB%A1%9C%20123">네이버 지도</a>
-        <a class="map-btn" target="_blank" rel="noopener"
-           href="https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%85%8C%ED%97%A4%EB%9E%80%EB%A1%9C%20123">카카오맵</a>
-        <a class="map-btn" target="_blank" rel="noopener"
-           href="https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%85%8C%ED%97%A4%EB%9E%80%EB%A1%9C%20123">구글 지도</a>
-      </div>
-      <dl class="transport">
-        <dt>지하철</dt>
-        <dd>2호선 강남역 3번 출구 도보 5분</dd>
-        <dt>버스</dt>
-        <dd>강남역 정류장 하차 (146, 341, 360, 740)</dd>
-        <dt>주차</dt>
-        <dd>건물 지하 주차장 2시간 무료</dd>
-      </dl>
-    </section>
-
-    <!-- 마음 전하실 곳 -->
-    <section class="section account fade-in">
-      <p class="section__en">Account</p>
-      <h2 class="section__title">마음 전하실 곳</h2>
-      <p class="account__desc">참석이 어려우신 분들을 위해 기재했습니다.<br />너그러운 마음으로 양해 부탁드립니다.</p>
-
-      <div class="accordion">
-        <button class="accordion__head" type="button" aria-expanded="false">신랑측 계좌번호</button>
-        <ul class="accordion__body">
-          <li><span>신랑 김민준</span><span>국민 123-456-789012</span><button class="link-btn" type="button" data-copy="국민 123-456-789012">복사</button></li>
-          <li><span>아버지 김정호</span><span>신한 110-123-456789</span><button class="link-btn" type="button" data-copy="신한 110-123-456789">복사</button></li>
-          <li><span>어머니 박미경</span><span>우리 1002-123-456789</span><button class="link-btn" type="button" data-copy="우리 1002-123-456789">복사</button></li>
+        <ul class="menu-grid">
+          <li class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="images/cafe-latte.jpg"
+                   srcset="images/cafe-latte-600.jpg 600w, images/cafe-latte.jpg 1200w"
+                   sizes="(max-width: 480px) 130px, (max-width: 1024px) 50vw, 280px" alt="잎사귀 라떼아트가 그려진 유리잔 카페 라떼" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">카페 라떼</h3>
+              <p class="menu-card__en">Cafe Latte</p>
+              <p class="menu-card__desc">고소한 원두와 부드러운 우유의 기본 라떼</p>
+              <p class="menu-card__price">5,000원</p>
+            </div>
+          </li>
+          <li class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="images/strawberry-latte.jpg"
+                   srcset="images/strawberry-latte-600.jpg 600w, images/strawberry-latte.jpg 875w"
+                   sizes="(max-width: 480px) 130px, (max-width: 1024px) 50vw, 280px" alt="딸기를 올린 분홍빛 딸기 라떼" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">딸기 라떼</h3>
+              <p class="menu-card__en">Strawberry Latte</p>
+              <p class="menu-card__desc">직접 만든 딸기청을 넣은 달콤한 라떼</p>
+              <p class="menu-card__price">6,500원</p>
+            </div>
+          </li>
+          <li class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="images/lemon-ade.jpg"
+                   srcset="images/lemon-ade-600.jpg 600w, images/lemon-ade.jpg 904w"
+                   sizes="(max-width: 480px) 130px, (max-width: 1024px) 50vw, 280px" alt="줄무늬 빨대를 꽂은 노란 레몬 에이드" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">레몬 에이드</h3>
+              <p class="menu-card__en">Lemon Ade</p>
+              <p class="menu-card__desc">상큼한 레몬과 탄산의 시원한 한 잔</p>
+              <p class="menu-card__price">6,000원</p>
+            </div>
+          </li>
+          <li class="menu-card reveal">
+            <div class="menu-card__image">
+              <img src="images/tiramisu.jpg"
+                   srcset="images/tiramisu-600.jpg 600w, images/tiramisu.jpg 1200w"
+                   sizes="(max-width: 480px) 130px, (max-width: 1024px) 50vw, 280px" alt="초콜릿 장식을 올린 티라미수" loading="lazy">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">티라미수</h3>
+              <p class="menu-card__en">Tiramisu</p>
+              <p class="menu-card__desc">에스프레소를 머금은 부드러운 마스카포네 케이크</p>
+              <p class="menu-card__price">7,000원</p>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="accordion">
-        <button class="accordion__head" type="button" aria-expanded="false">신부측 계좌번호</button>
-        <ul class="accordion__body">
-          <li><span>신부 이서연</span><span>하나 123-456789-01234</span><button class="link-btn" type="button" data-copy="하나 123-456789-01234">복사</button></li>
-          <li><span>아버지 이상훈</span><span>농협 302-1234-5678-91</span><button class="link-btn" type="button" data-copy="농협 302-1234-5678-91">복사</button></li>
-          <li><span>어머니 최윤희</span><span>기업 012-345678-01-012</span><button class="link-btn" type="button" data-copy="기업 012-345678-01-012">복사</button></li>
-        </ul>
+    </section>
+
+    <!-- 5. Space -->
+    <section class="section section--bg" id="space">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2 class="section-title__en">Space</h2>
+          <p class="section-title__ko">햇살과 초록이 머무는 공간</p>
+        </div>
+        <figure class="space reveal">
+          <img src="images/cafe-interior.jpg"
+               srcset="images/cafe-interior-600.jpg 600w, images/cafe-interior.jpg 1200w"
+               sizes="(max-width: 1168px) 100vw, 1120px"
+               alt="높은 창과 야자수 화분, 원목 테이블이 있는 밝은 매장 내부" loading="lazy">
+          <figcaption class="space__caption">
+            높은 창으로 햇살이 들고, 초록 식물 사이에서 쉬어 가는 곳.<br>
+            한쪽에서는 매일 원두를 볶는 고소한 향이 퍼집니다.
+          </figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- 방명록 -->
-    <section class="section guestbook fade-in">
-      <p class="section__en">Guestbook</p>
-      <h2 class="section__title">축하 메시지</h2>
-      <form class="guestbook__form" id="guestbook-form">
-        <input type="text" name="name" placeholder="이름" maxlength="10" required />
-        <textarea name="message" placeholder="축하 메시지를 남겨주세요" maxlength="200" rows="3" required></textarea>
-        <button class="btn" type="submit">남기기</button>
-      </form>
-      <ul class="guestbook__list" id="guestbook-list"></ul>
+    <!-- 6. Location -->
+    <section class="section section--alt" id="location">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2 class="section-title__en">Location</h2>
+          <p class="section-title__ko">오시는 길</p>
+        </div>
+        <div class="location">
+          <figure class="location__map reveal">
+            <img src="images/cafe-map.jpg" width="771" height="840"
+                 alt="멜로우빈 위치 지도. 반월당역과 중앙로역 사이, 빨간 원으로 표시한 곳" loading="lazy">
+            <span class="location__marker" aria-hidden="true"></span>
+          </figure>
+          <dl class="location__info reveal">
+            <div class="location__row">
+              <dt>주소</dt>
+              <dd>서울시 마포구 연남로 00길 12, 1층</dd>
+            </div>
+            <div class="location__row">
+              <dt>영업시간</dt>
+              <dd>매일 10:00 – 21:00<br><small>라스트 오더 20:30</small></dd>
+            </div>
+            <div class="location__row">
+              <dt>휴무</dt>
+              <dd>매주 월요일</dd>
+            </div>
+            <div class="location__row">
+              <dt>전화</dt>
+              <dd><a href="tel:020000000">02-000-0000</a></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
     </section>
 
-    <!-- 공유 -->
-    <footer class="footer">
-      <button class="btn btn--outline" type="button" id="share-btn">청첩장 링크 공유하기</button>
-      <p class="footer__thanks">Thank you</p>
-    </footer>
   </main>
 
-  <!-- 연락하기 모달 -->
-  <div class="modal" id="contact-modal" hidden>
-    <div class="modal__dim" data-close></div>
-    <div class="modal__content" role="dialog" aria-modal="true" aria-label="연락하기">
-      <button class="modal__close" type="button" data-close aria-label="닫기">&times;</button>
-      <h3>신랑측</h3>
-      <ul class="contact-list">
-        <li><span>신랑 김민준</span><a href="tel:010-1234-5678">전화</a><a href="sms:010-1234-5678">문자</a></li>
-        <li><span>아버지 김정호</span><a href="tel:010-2345-6789">전화</a><a href="sms:010-2345-6789">문자</a></li>
-        <li><span>어머니 박미경</span><a href="tel:010-3456-7890">전화</a><a href="sms:010-3456-7890">문자</a></li>
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="footer__logo">Mellow Bean</a>
+      <ul class="footer__links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="tel:020000000">02-000-0000</a></li>
       </ul>
-      <h3>신부측</h3>
-      <ul class="contact-list">
-        <li><span>신부 이서연</span><a href="tel:010-4567-8901">전화</a><a href="sms:010-4567-8901">문자</a></li>
-        <li><span>아버지 이상훈</span><a href="tel:010-5678-9012">전화</a><a href="sms:010-5678-9012">문자</a></li>
-        <li><span>어머니 최윤희</span><a href="tel:010-6789-0123">전화</a><a href="sms:010-6789-0123">문자</a></li>
-      </ul>
+      <p class="footer__copy">© 2026 MELLOW BEAN</p>
     </div>
-  </div>
-
-  <!-- 갤러리 확대 보기 -->
-  <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox__nav lightbox__prev" type="button" aria-label="이전">&#8249;</button>
-    <div class="lightbox__img" id="lightbox-img"></div>
-    <button class="lightbox__nav lightbox__next" type="button" aria-label="다음">&#8250;</button>
-    <button class="modal__close lightbox__close" type="button" aria-label="닫기">&times;</button>
-  </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
